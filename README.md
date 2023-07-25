@@ -1,14 +1,13 @@
-<img src="https://github.com/Furkan-Gulsen/Blur-Detection-Web-App/blob/master/BlurDetection.gif" />
+# Final exam
+The aim of this exercise is to dock the Python application present in this repo, and automate its build via a pipeline on github actions. The application should be tested locally on your workstation before starting the exercise. This is a photo-based Blur detection application, with a WEB interface that can easily be tested with python on your PC.
 
-# Blur-Detection-Web-App
-"Where will we use this in our lives?" I said about the Laplace formula 5-6 years ago. Now, when I was thinking of writing lines of code, it took a form that comes up and does all I think with a single line of code 😅
+## Exercise steps.
 
-Hundreds of blurry photos in tens of thousands of photos in my gallery. "Who will delete it?" This is a project that comes to my mind as soon as I say this. As I mentioned above, the Laplace method, which I applied with a few small presettings, detects blurry photos in the gallery. I've turned it into a web app to make it more fun and usable.
+### Create a repository
+Fork this repo on your personal account and add the user @skhedim as a read-only user for correction.
 
-Live Demo: https://ap-webapp-frontend.herokuapp.com/blur_detection
+### Write the Dockerfile
+Add a Dockerfile to the root of the repo. The application is based on the python 3.8 runtime. You need to run the app.py file to launch the application.
 
-Source: https://www.pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
-
-```
-python main.py
-```
+### Write the pipeline
+Using GH actions, write a pipeline to automatically build the image and push it to your registry or to Github's integrated registry. (Versioning is not to be taken into account for this exercise.
